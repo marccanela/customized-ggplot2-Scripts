@@ -16,4 +16,18 @@ Welcome to the Customized ggplot2 Scripts repository! This repository contains a
 To get started, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/customized-ggplot2-scripts.git
+git clone https://github.com/marccanela/customized-ggplot2-scripts.git
+```
+
+## Prerequisites
+
+Before using these scripts, ensure you have the following software and R packages installed:
+
+- [R](https://www.r-project.org/)
+- [RStudio](https://www.rstudio.com/) (optional but recommended)
+- [ggplot2](https://ggplot2.tidyverse.org/)
+
+You can install ggplot2 in R using the following command:
+
+```R
+install.packages("ggplot2")
