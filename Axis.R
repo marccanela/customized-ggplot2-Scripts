@@ -1,11 +1,11 @@
 library(ggplot2)
 
-# SWITCH TEH AXIS
+# SWITCH THE AXIS
 ggplot(PlantGrowth, aes(x = group, y = weight)) +
   geom_boxplot() +
   coord_flip()      # Flip the axis
 
-# INDICATE TEH RANGE OF TE AXIS
+# INDICATE THE RANGE OF THE AXIS
 pg_plot <- ggplot(PlantGrowth, aes(x = group, y = weight)) +
   geom_boxplot()
 pg_plot
@@ -24,14 +24,14 @@ pg_plot <- ggplot(PlantGrowth, aes(x = group, y = weight)) +
 pg_plot +
   scale_x_discrete(limits = c("trt1", "ctrl", "trt2"))  # You may not include all of them
 
-# ESCALATE TEH AXIS
+# ESCALATE THE AXIS
 library(gcookbook)
 m_plot <- ggplot(marathon, aes(x = Half,y = Full)) +
   geom_point()
 m_plot +
   coord_fixed(ratio = 1/2)  # You may change the ratio. Without specifying, we get 1:1
 
-# Indicate important points of the axis
+# Indicate important points on the axis
 ggplot(PlantGrowth, aes(x = group, y = weight)) +
   geom_boxplot() +
   scale_y_continuous(breaks = c(4, 4.25, 4.5, 5, 6, 8))
@@ -40,7 +40,7 @@ ggplot(PlantGrowth, aes(x = group, y = weight)) +
 pg_plot <- ggplot(PlantGrowth, aes(x = group, y = weight)) +
   geom_boxplot()
 pg_plot
-# Eliminate vaues from the Y axis
+# Eliminate values from the Y axis
 pg_plot +
   theme(axis.ticks = element_blank(), axis.text.y = element_blank())
 # Eliminates lines of the plot matrix
@@ -113,7 +113,7 @@ animals_plot +
   scale_y_log10() +
   annotation_logticks()
 
-# Write a date in the axis
+# Write a date on the axis
 library(dplyr)
 library(scales)
 econ_mod <- economics %>%
