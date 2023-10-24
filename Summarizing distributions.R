@@ -25,7 +25,7 @@ ggplot(birthwt_mod, aes(x = bwt, y = ..density..)) +
   geom_histogram(binwidth = 200, fill = "cornsilk", colour = "grey60", size = .2) +
   geom_density() +
   facet_grid(smoke ~ .)
-# An histogram overlapped to another
+# A histogram overlapped with another
 ggplot(birthwt_mod, aes(x = bwt, fill = smoke)) +
   geom_histogram(position = "identity", alpha = 0.4)
 ggplot(birthwt_mod, aes(x = bwt, fill = smoke)) +
