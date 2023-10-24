@@ -6,7 +6,7 @@ ggplot(BOD, aes(x = Time, y = demand)) +
   geom_point() +          # Add dots in each value
   expand_limits(y = 0)    # Allow the Y axis to show the zero
 
-# The Y axis can be shown in logarithmic scale
+# The Y axis can be shown in the logarithmic scale
 ggplot(worldpop, aes(x = Year, y = Population)) +
   geom_line() +
   geom_point() +
