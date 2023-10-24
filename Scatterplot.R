@@ -20,7 +20,7 @@ ggplot(heightweight, aes(x = ageYear, y = heightIn, color = sex, size = weightLb
   geom_point(alpha = .5) +
   scale_colour_brewer(palette = "Set1")
   
-# SOLVING THE EXCES OF DOTS
+# SOLVING THE EXCESS OF DOTS
 diamonds_sp <- ggplot(diamonds, aes(x = carat, y = price))
 diamonds_sp +
   geom_point()
