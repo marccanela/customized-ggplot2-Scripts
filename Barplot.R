@@ -28,7 +28,7 @@ ggplot(BOD,
 
 # PLOTS OF COUNTINGS
 diamonds                          # There are 53.940 files
-ggplot(diamonds, aes(x = cut)) +  # Without indicating the Y it counts the number of time each X appears
+ggplot(diamonds, aes(x = cut)) +  # Without indicating the Y, it counts the number of times each X appears
   geom_bar()
 
 # GROUPPING BARS ACCORDING TO A CATEGORICAL VARIABLE
@@ -49,7 +49,7 @@ ggplot(cabbage_exp, aes(x = Date, y = Weight, fill = Cultivar)) +
 ggplot(cabbage_exp, aes(x = Date, y = Weight, fill = Cultivar)) +
   geom_col(width = 0.5, position = position_dodge(0.7), colour = "black") +
   scale_fill_manual(values = c("#CCEEEF", "#FFFDDD"),
-                    guide = FALSE)                      # With this we eliminate the legend
+                    guide = FALSE)                      # With this, we eliminate the legend
 
 # We gather the two bars in just one
 ggplot(cabbage_exp, aes(x = Date, y = Weight, fill = Cultivar)) +
